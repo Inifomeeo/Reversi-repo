@@ -1,3 +1,3 @@
 # Reversi
 
-Description.
+Description of project.
