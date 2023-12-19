@@ -1,0 +1,97 @@
+/*sets the size of the green squares and the size of the disks*/
+:root {
+    --cell-size: 60px;
+    --disk-size: 56px;
+}
+
+.board {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+/*styling for the green squares*/
+.cell {
+    width: var(--cell-size);
+    height: var(--cell-size);
+    background-color: green;
+    border: 2px solid black;
+    position: absolute;
+    cursor: pointer;
+}
+
+/*styling for the disks*/
+.disk {
+    width: var(--disk-size);
+    height: var(--disk-size);
+    position: absolute;
+    border-radius: 50%;
+}
+
+.score {
+    position: absolute;
+    left: 390px;
+    top: 488px;
+    width: 484px;
+    font-size: 48.4px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*styling for the black disk scoreboard*/
+.scoreBlack {
+    position: absolute;
+    left: 390px;
+    top: 488px;
+    width: 129px;
+    font-size: 48.4px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*styling for the white disk scoreboard*/
+.scoreWhite {
+    position: absolute;
+    left: 745px;
+    top: 488px;
+    width: 129px;
+    font-size: 48.4px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/*styling for the "New Game" button*/
+.newGame {
+    position: absolute;
+    left: 599.75px;
+    top: 488px;
+    text-align: center;
+}
+
+/*styling for the "Rules" button*/
+.rulesButton {
+    position: absolute;
+    left: 611.75px;
+    top: 528px;
+    text-align: center;
+}
+
+/*styling for the game rules display*/
+.gameRules {
+    display: none;
+    position: absolute;
+    left: 890px;
+    top: 0;
+    background-color: lightblue;
+    border: 1px solid black;
+}
