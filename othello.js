@@ -115,7 +115,7 @@ function restartGame() {
     changeScore();
 }
 
-//
+// determines if there is an available legal move or not
 function availableMove(rep, row, column) {
     let changedDisks = toChangeDisks(rep,row, column);
     if(changedDisks.length == 0) {
@@ -129,7 +129,7 @@ function availableMove(rep, row, column) {
 function toChangeDisks(rep, row, column) {
     let changedDisks = [];
 
-    //flips disks above where the player clicks
+    // flips disks above where the player clicks
     let possiblyAffectedUp = [];
     let rowMovement = row;
     while (rowMovement > 0) {
@@ -146,7 +146,7 @@ function toChangeDisks(rep, row, column) {
         }
     }
     
-    //flips disks below where the player clicks
+    // flips disks below where the player clicks
     let possiblyAffectedDown = [];
     let rowMovement2 = row;
     while (rowMovement2 < 7) {
@@ -163,7 +163,7 @@ function toChangeDisks(rep, row, column) {
         }
     }
 
-    //flips disks on the right of where the player clicks
+    // flips disks on the right of where the player clicks
     let possiblyAffectedRight = [];
     let columnMovement = column;
     while (columnMovement < 7) {
@@ -180,7 +180,7 @@ function toChangeDisks(rep, row, column) {
         }
     }
 
-    //flips disks on the left of where the player clicks
+    // flips disks on the left of where the player clicks
     let possiblyAffectedLeft = [];
     let columnMovement2 = column;
     while (columnMovement2 > 0) {
@@ -197,7 +197,7 @@ function toChangeDisks(rep, row, column) {
         }
     }
 
-    //flips disks on the top right of where the player clicks
+    // flips disks on the top right of where the player clicks
     let possiblyAffectedUpRight = [];
     let rowMovement3 = row;
     let columnMovement3 = column;
@@ -216,7 +216,7 @@ function toChangeDisks(rep, row, column) {
         }
     }
 
-    //flips disks on the top left of where the player clicks
+    // flips disks on the top left of where the player clicks
     let possiblyAffectedUpLeft = [];
     let rowMovement4 = row;
     let columnMovement4 = column;
@@ -235,7 +235,7 @@ function toChangeDisks(rep, row, column) {
         }
     }
 
-    //flips disks on the bottom right of where the player clicks
+    // flips disks on the bottom right of where the player clicks
     let possiblyAffectedDownRight = [];
     let rowMovement5 = row;
     let columnMovement5 = column;
@@ -254,7 +254,7 @@ function toChangeDisks(rep, row, column) {
         }
     }
 
-    //flips disks on the bottom left of where the player clicks
+    // flips disks on the bottom left of where the player clicks
     let possiblyAffectedDownLeft = [];
     let rowMovement6 = row;
     let columnMovement6 = column;
